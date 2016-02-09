@@ -7,7 +7,7 @@ angular.module('myApp')
 
         $scope.sendImage = function () {
             var fd = new FormData(document.getElementById('fileForm'));
-            fd.append('user', 6);
+            fd.append('user', localStorage.getItem("userID"));
             fd.append('type', $scope.type);
             fd.append('mime-type', $scope.mimeType);
             

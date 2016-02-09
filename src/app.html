@@ -22,6 +22,10 @@
     <register-form></register-form>
     </div>
     
+    <div ng-controller="loginController">
+        <login-form></login-form>
+    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -35,10 +39,12 @@
     <!-- controllers-->
     <script src="scripts/controllers/uploadController.js"></script>
     <script src="scripts/controllers/registerController.js"></script>
+    <script src="scripts/controllers/loginController.js"></script>
     
     <!--directives-->
     <script src="scripts/directives/fileForm.js"></script>
     <script src="scripts/directives/registerForm.js"></script>
+    <script src="scripts/directives/loginForm.js"></script>
     
     <!--services-->
     <script src="scripts/services/ajaxFactory.js"></script>

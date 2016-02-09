@@ -1,6 +1,15 @@
 <form id="fileForm">
+    <h3>File upload</h3>
+    Choose file
     <input name="file" type="file" onchange="angular.element(this).scope().setMediaFile(this)">
+    <br>
+    Title of file
     <input name="title" type="text">
+    <br>
+    Description of file
     <input name="description" type="text">
+    <br>
     <button ng-click="sendImage()">Upload</button>
+    <br>
+    <br>
 </form>

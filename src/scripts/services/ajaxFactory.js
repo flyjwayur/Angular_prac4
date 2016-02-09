@@ -19,6 +19,14 @@ angular.module('myApp')
                 }
             });
         };
+    
+        ajaxFunctions.login = function (args) {
+            return $http.post(urlBase + 'login', $httpParamSerializer(args), {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            });
+        };
 
         return ajaxFunctions;
     });

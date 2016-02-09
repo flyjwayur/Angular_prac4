@@ -1,14 +1,12 @@
 angular.module('myApp')
     .controller('registerController', function ($scope, AjaxFactory) {
-
         $scope.register = function () {
             var data = {
-              username: $scope.uname,
-              password: $scope.pwd,
-              email: $scope.email
+                "username": $scope.uname,
+                "password": $scope.pwd,
+                "email": $scope.email
             };
-            //var fd = new FormData(document.getElementById('fileForm'));
-            
+
             var request = AjaxFactory.register(data);
 
             request.then(function (response) {
